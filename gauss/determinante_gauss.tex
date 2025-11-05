@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+%
+\usepackage{amsmath}%
+\usepackage{geometry}%
+\geometry{margin=1in}%
+%
+\begin{document}%
+\normalsize%
+\section{Cálculo del determinante por eliminación de Gauss}%
+\label{sec:ClculodeldeterminanteporeliminacindeGauss}%
+Se calcula el determinante aplicando eliminación de Gauss con pivoteo por filas. Se muestran todas las operaciones elementales y las matrices resultantes.%
+\subsection{Matriz inicial}%
+\label{subsec:Matrizinicial}%
+$$ \begin{bmatrix}2 & 1 & 3 \\ 1 & 0 & 2 \\ 3 & 4 & 1\end{bmatrix} $$
+
+%
+\subsection{Paso 1: Matriz inicial}%
+\label{subsec:Paso1Matrizinicial}%
+\noindent%
+$$ \begin{bmatrix}2 & 1 & 3 \\ 1 & 0 & 2 \\ 3 & 4 & 1\end{bmatrix} $$
+
+%
+\subsection{Paso 2: Fila 2 ← F2 {-} (1/2)·F1}%
+\label{subsec:Paso2Fila2F2{-}(1/2)F1}%
+\noindent%
+$$ \begin{bmatrix}2 & 1 & 3 \\ 0 & \frac{-1}{2} & \frac{1}{2} \\ 3 & 4 & 1\end{bmatrix} $$
+
+%
+\subsection{Paso 3: Fila 3 ← F3 {-} (3/2)·F1}%
+\label{subsec:Paso3Fila3F3{-}(3/2)F1}%
+\noindent%
+$$ \begin{bmatrix}2 & 1 & 3 \\ 0 & \frac{-1}{2} & \frac{1}{2} \\ 0 & \frac{5}{2} & \frac{-7}{2}\end{bmatrix} $$
+
+%
+\subsection{Paso 4: Fila 3 ← F3 {-} ({-}5)·F2}%
+\label{subsec:Paso4Fila3F3{-}({-}5)F2}%
+\noindent%
+$$ \begin{bmatrix}2 & 1 & 3 \\ 0 & \frac{-1}{2} & \frac{1}{2} \\ 0 & 0 & -1\end{bmatrix} $$
+
+%
+\subsection{Paso 5: Matriz triangular superior final (producto diagonal = 1)}%
+\label{subsec:Paso5Matriztriangularsuperiorfinal(productodiagonal=1)}%
+\noindent%
+$$ \begin{bmatrix}2 & 1 & 3 \\ 0 & \frac{-1}{2} & \frac{1}{2} \\ 0 & 0 & -1\end{bmatrix} $$
+
+%
+\subsection{Paso 6: Determinante = 1}%
+\label{subsec:Paso6Determinante=1}%
+\noindent%
+$$ \begin{bmatrix}2 & 1 & 3 \\ 0 & \frac{-1}{2} & \frac{1}{2} \\ 0 & 0 & -1\end{bmatrix} $$
+
+%
+\subsection{Resultado final}%
+\label{subsec:Resultadofinal}%
+El determinante vale: $$\det(A) = 1$$
+
+%
+\end{document}
